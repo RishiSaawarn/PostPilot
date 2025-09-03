@@ -1,4 +1,4 @@
-# AgentForge 🚀
+# PostPilot 🚀
 
 AgentForge is an **AI content automation agent** that orchestrates multiple generative tools—LLMs, diffusion models, and motion adapters—through a unified reasoning layer.  
 It can generate **captions, images, and GIFs**, remember and refine prompts, and intelligently call tools when users request improvements.  

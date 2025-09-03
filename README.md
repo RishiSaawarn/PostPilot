@@ -24,22 +24,23 @@ By automating creative workflows, AgentForge reduces content creation time by **
 - **React.js** – Frontend editor and user interface  
 - **Hugging Face Hub** – Model hosting and checkpoint loading  
 
-```mermaid
-flowchart TD
-    A[User Request] --> B[Main LLM (Agent)]
+## 🧠 How It Works
 
-    B -->|Generate prompt| C[Caption Tool (LLM)]
-    B -->|Generate prompt| D[Image Tool (Stable Diffusion / DALL·E)]
-    B -->|Generate prompt| E[GIF Tool (AnimateDiff)]
-    B -->|Generic query| F[LLM Direct Answer]
+### 🗺️ Agentic Architecture
+The workflow follows a **tool-using agent design pattern**:
 
-    D --> G[Store/Update Prompt]
-    E --> G
-    C --> G
+A[User Request] --> B[Main LLM (Agent)] <br>
+B -->|Generate prompt| C[Caption Tool (LLM)] <br>
+B -->|Generate prompt| D[Image Tool (Stable Diffusion / DALL·E)] <br>
+B -->|Generate prompt| E[GIF Tool (AnimateDiff)] <br>
+B -->|Generic query| F[LLM Direct Answer] <br>
+D --> G[Store/Update Prompt] <br>
+E --> G <br>
+C --> G <br>
+G --> H[User Updates] <br>
+H --> B <br>
 
-    G --> H[User Updates]
-    H --> B
-
+---
 ## 🚀 Getting Started
 
 ### Prerequisites

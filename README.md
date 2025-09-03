@@ -30,9 +30,8 @@ By automating creative workflows, AgentForge reduces content creation time by **
 ### 🗺️ Agentic Architecture
 The workflow follows a **tool-using agent design pattern**:
 
-mermaid
-graph TD
 A[User Request] --> B[Main LLM (Agent)]
+
 B -->|Generate prompt| C[Caption Tool (LLM)]
 B -->|Generate prompt| D[Image Tool (Stable Diffusion / DALL·E)]
 B -->|Generate prompt| E[GIF Tool (AnimateDiff)]
